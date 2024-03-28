@@ -23,13 +23,13 @@ public class SpringHybernateApplication {
 
         return runner -> {
             //	createStudent(studentDAO);
-            //	createMultipleStudents(studentDAO);
+            	createMultipleStudents(studentDAO);
             //	readStudent(studentDAO);
             //queryForStudents(studentDAO);
             //queryForStudentsByLastName(studentDAO);
             //updateStudent(studentDAO);
             //	deleteStudent(studentDAO);
-            deleteAllStudents(studentDAO);
+            //  deleteAllStudents(studentDAO);
 
         };
     }
@@ -95,6 +95,4 @@ public class SpringHybernateApplication {
         studentDAO.save(tempStudent);
         System.out.println("Saved student. Generated id: " + tempStudent.getId());
     }
-
-
 }
